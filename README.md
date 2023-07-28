@@ -192,10 +192,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 	  case CT_Y:
 	    if (record->event.pressed) {
 	      shift_activate(0);
-	      register_code(KC_LCTRL);
+	      register_code(KC_LEFT_CTRL);
 	      register_code(KC_Y);
 	      unregister_code(KC_Y);
-	      unregister_code(KC_LCTRL);
+	      unregister_code(KC_LEFT_CTRL);
 	    }
 	    return false;
 	    break;
@@ -215,10 +215,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 	  case CT_D:
 	    if (record->event.pressed) {
 	      lang_activate(0);
-	      register_code(KC_LCTRL);
+	      register_code(KC_LEFT_CTRL);
 	      register_code(KC_D);
 	      unregister_code(KC_D);
-	      unregister_code(KC_LCTRL);
+	      unregister_code(KC_LEFT_CTRL);
 	    }
 	    return false;
 	    break;
